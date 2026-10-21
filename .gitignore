@@ -1,5 +1,14 @@
+# Maven
 target/
+
+# IDE
 .idea/
 *.iml
-*.log
-.env*
+
+# Local environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
