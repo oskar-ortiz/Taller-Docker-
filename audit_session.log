@@ -1,9 +1,1173 @@
-2026-10-21T01:02:00Z | pwd && ls -la && git status --short --branch
-/vercel/share/v0-project
-[project listing captured by shell]
-## Docker verification attempt
-2026-10-21T01:02:00Z | docker version && docker info
-bash: line 1: docker: command not found
-EXIT CODE: 127
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020202642
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Force | Out-Null; Get-Date -Format o; Write-Output 'Preflight: docker ps -a verified that eco_air_active and eco_air_crash do not exist; no removal was required. Existing acme-mq-prod-01 and kernel-demo are untouched.'; Get-Date -Format o; Write-Output 'docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 .'; docker build --build-arg 'STUDENT_ID=905523' -t eco-air-backend:1.0.0 .; $buildExit=$LASTEXITCODE; Write-Output "EXIT CODE: $buildExit"; Stop-Transcript | Out-Null; exit $buildExit
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 23996
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:26:42.0186728-05:00
+Preflight: docker ps -a verified that eco_air_active and eco_air_crash do not exist; no removal was required. Existing acme-mq-prod-01 and kernel-demo are untouched.
+2026-10-20T20:26:42.0279430-05:00
+docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 .
 
-Docker Engine is unavailable in this Linux sandbox. No image build, container run, docker history, inspect, stats, or application log evidence was fabricated.
+EXIT CODE: 1
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020202911
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020203102
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker version'; docker version; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker info'; docker info; $infoExit=$LASTEXITCODE; Write-Output "EXIT CODE: $infoExit"; Stop-Transcript | Out-Null; exit $infoExit
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 16428
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:31:02.9994803-05:00
+docker version
+
+EXIT CODE: 1
+2026-10-20T20:31:50.1516576-05:00
+docker info
+
+EXIT CODE: 1
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020203238
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020203252
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker desktop status'; docker desktop status; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker desktop restart --help'; docker desktop restart --help; $result=$LASTEXITCODE; Write-Output "EXIT CODE: $result"; Stop-Transcript | Out-Null; exit $result
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 9996
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:32:52.1427557-05:00
+docker desktop status
+
+EXIT CODE: 0
+2026-10-20T20:32:52.5740475-05:00
+docker desktop restart --help
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020203252
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020203302
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker desktop restart'; docker desktop restart; $restartExit=$LASTEXITCODE; Write-Output "EXIT CODE: $restartExit"; if ($restartExit -eq 0) { Get-Date -Format o; Write-Output 'docker desktop status'; docker desktop status; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker version'; docker version; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker info'; docker info; $infoExit=$LASTEXITCODE; Write-Output "EXIT CODE: $infoExit" } else { $infoExit=$restartExit }; Stop-Transcript | Out-Null; exit $infoExit
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 21540
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:33:02.2248640-05:00
+docker desktop restart
+
+EXIT CODE: 1
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020203802
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020203832
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker desktop status'; docker desktop status; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'Get-Process -Id 2928,10020,19184,28868,32340,25868,5680,28976'; Get-Process -Id 2928,10020,19184,28868,32340,25868,5680,28976 -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,Path,StartTime | Format-Table -AutoSize; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 9004
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:38:32.3822628-05:00
+docker desktop status
+
+EXIT CODE: 0
+2026-10-20T20:38:32.7417286-05:00
+Get-Process -Id 2928,10020,19184,28868,32340,25868,5680,28976
+
+   Id ProcessName        Path                                                                                 StartTime
+   -- -----------        ----                                                                                 ---------
+ 5680 com.docker.backend C:\Users\Admin\AppData\Local\Programs\DockerDesktop\resources\com.docker.backend.exe 20/10/...
+25868 com.docker.backend C:\Users\Admin\AppData\Local\Programs\DockerDesktop\resources\com.docker.backend.exe 20/10/...
+28976 com.docker.build   C:\Users\Admin\AppData\Local\Programs\DockerDesktop\resources\com.docker.build.exe   20/10/...
+ 2928 Docker Desktop     C:\Users\Admin\AppData\Local\Programs\DockerDesktop\Docker Desktop.exe               20/10/...
+10020 Docker Desktop     C:\Users\Admin\AppData\Local\Programs\DockerDesktop\frontend\Docker Desktop.exe      20/10/...
+19184 Docker Desktop     C:\Users\Admin\AppData\Local\Programs\DockerDesktop\frontend\Docker Desktop.exe      20/10/...
+28868 Docker Desktop     C:\Users\Admin\AppData\Local\Programs\DockerDesktop\frontend\Docker Desktop.exe      20/10/...
+32340 Docker Desktop     C:\Users\Admin\AppData\Local\Programs\DockerDesktop\frontend\Docker Desktop.exe      20/10/...
+
+
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020203832
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204003
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker desktop start --help'; docker desktop start --help; Write-Output "EXIT CODE: $LASTEXITCODE"; $failure=$false; $p=Get-Process -Id 28976 -ErrorAction SilentlyContinue; if($null -ne $p -and $p.ProcessName -eq 'com.docker.build' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\resources\com.docker.build.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 28976 -Force'; Stop-Process -Id 28976 -Force} elseif($null -ne $p){Write-Output 'Refusing PID 28976: process identity mismatch';$failure=$true}; $p=Get-Process -Id 5680 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'com.docker.backend' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\resources\com.docker.backend.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 5680 -Force'; Stop-Process -Id 5680 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 5680: process identity mismatch';$failure=$true}; $p=Get-Process -Id 25868 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'com.docker.backend' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\resources\com.docker.backend.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 25868 -Force'; Stop-Process -Id 25868 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 25868: process identity mismatch';$failure=$true}; $p=Get-Process -Id 10020 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'Docker Desktop' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\frontend\Docker Desktop.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 10020 -Force'; Stop-Process -Id 10020 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 10020: process identity mismatch';$failure=$true}; $p=Get-Process -Id 19184 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'Docker Desktop' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\frontend\Docker Desktop.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 19184 -Force'; Stop-Process -Id 19184 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 19184: process identity mismatch';$failure=$true}; $p=Get-Process -Id 28868 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'Docker Desktop' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\frontend\Docker Desktop.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 28868 -Force'; Stop-Process -Id 28868 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 28868: process identity mismatch';$failure=$true}; $p=Get-Process -Id 32340 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'Docker Desktop' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\frontend\Docker Desktop.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 32340 -Force'; Stop-Process -Id 32340 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 32340: process identity mismatch';$failure=$true}; $p=Get-Process -Id 2928 -ErrorAction SilentlyContinue; if(-not $failure -and $null -ne $p -and $p.ProcessName -eq 'Docker Desktop' -and $p.Path -eq "$env:LOCALAPPDATA\Programs\DockerDesktop\Docker Desktop.exe"){Get-Date -Format o; Write-Output 'Stop-Process -Id 2928 -Force'; Stop-Process -Id 2928 -Force} elseif(-not $failure -and $null -ne $p){Write-Output 'Refusing PID 2928: process identity mismatch';$failure=$true}; if($failure){Write-Output 'Recovery aborted because a process identity changed.';$result=1}else{Start-Sleep -Seconds 3;Get-Date -Format o;Write-Output 'docker desktop start';docker desktop start;$result=$LASTEXITCODE;Write-Output "EXIT CODE: $result";if($result -eq 0){Get-Date -Format o;Write-Output 'docker desktop status';docker desktop status;Write-Output "EXIT CODE: $LASTEXITCODE";Get-Date -Format o;Write-Output 'docker version';docker version;Write-Output "EXIT CODE: $LASTEXITCODE";Get-Date -Format o;Write-Output 'docker info';docker info;$result=$LASTEXITCODE;Write-Output "EXIT CODE: $result"}};Stop-Transcript | Out-Null;exit $result
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 13440
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:40:03.8678360-05:00
+docker desktop start --help
+
+EXIT CODE: 0
+2026-10-20T20:40:04.2016302-05:00
+Stop-Process -Id 28976 -Force
+2026-10-20T20:40:04.2430117-05:00
+Stop-Process -Id 5680 -Force
+2026-10-20T20:40:04.2733573-05:00
+Stop-Process -Id 25868 -Force
+2026-10-20T20:40:04.3156100-05:00
+Stop-Process -Id 10020 -Force
+2026-10-20T20:40:04.3536942-05:00
+Stop-Process -Id 19184 -Force
+2026-10-20T20:40:04.3856469-05:00
+Stop-Process -Id 28868 -Force
+2026-10-20T20:40:04.4244350-05:00
+Stop-Process -Id 32340 -Force
+2026-10-20T20:40:07.4773022-05:00
+docker desktop start
+
+EXIT CODE: 0
+2026-10-20T20:40:15.5678855-05:00
+docker desktop status
+
+EXIT CODE: 0
+2026-10-20T20:40:16.8690788-05:00
+docker version
+
+EXIT CODE: 0
+2026-10-20T20:40:19.2612705-05:00
+docker info
+
+EXIT CODE: 2
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204019
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204114
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker desktop status'; docker desktop status; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker ps -a --no-trunc --format "{{.ID}} {{.Names}} {{.Image}} {{.Status}}"'; docker ps -a --no-trunc --format '{{.ID}} {{.Names}} {{.Image}} {{.Status}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory'; Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory | Format-List; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 7348
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:41:14.0116095-05:00
+docker desktop status
+
+EXIT CODE: 0
+2026-10-20T20:41:14.3736287-05:00
+docker ps -a --no-trunc --format "{{.ID}} {{.Names}} {{.Image}} {{.Status}}"
+
+EXIT CODE: 0
+2026-10-20T20:41:14.6966471-05:00
+Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory
+
+
+TotalVisibleMemorySize : 7541792
+FreePhysicalMemory     : 55804
+
+
+
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204115
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204133
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 15 Id,ProcessName,WorkingSet64,Path'; Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 15 Id,ProcessName,WorkingSet64,Path | Format-Table -AutoSize; Get-Date -Format o; Write-Output 'wsl --list --running --verbose'; wsl --list --running --verbose; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 6284
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:41:33.6244768-05:00
+Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 15 Id,ProcessName,WorkingSet64,Path
+
+   Id ProcessName        WorkingSet64 Path
+   -- -----------        ------------ ----
+ 3168 Memory Compression   1610428416
+19648 Code                  449355776 C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\code.exe
+27312 msedge                381992960 C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+10324 Code                  216387584 C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\code.exe
+13940 copilot-runtime       127696896 c:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\6d62b1d5da\resources\a...
+30864 MsMpEng               110448640
+12080 vmmemWSL               98045952
+20704 java                   89161728 c:\Users\Admin\.vscode\extensions\redhat.java-1.58.0-win32-x64\jre\25.0.4.1-wi...
+15932 Code                   84652032 C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\code.exe
+ 6284 powershell             79912960 C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+11624 msedge                 78270464 C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+24320 msedge                 69005312 C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+ 5592 Code                   53821440 C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\code.exe
+27752 msedge                 49414144 C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+15040 Docker Desktop         40747008 C:\Users\Admin\AppData\Local\Programs\DockerDesktop\frontend\Docker Desktop.exe
+
+
+2026-10-20T20:41:33.7381120-05:00
+wsl --list --running --verbose
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204133
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204443
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 .'; docker build --build-arg 'STUDENT_ID=905523' -t eco-air-backend:1.0.0 .; $buildExit=$LASTEXITCODE; Write-Output "EXIT CODE: $buildExit"; Stop-Transcript | Out-Null; exit $buildExit
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 16948
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:44:43.6870974-05:00
+docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 .
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204717
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204743
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker history --human --format "table {{.Size}}\t{{.CreatedBy}}" eco-air-backend:1.0.0'; docker history --human --format "table {{.Size}}`t{{.CreatedBy}}" eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0'; docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 12; Get-Date -Format o; Write-Output 'docker top eco_air_active -o pid,user,comm'; docker top eco_air_active -o pid,user,comm; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active id'; docker exec eco_air_active id; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active touch /etc/crontab_fake'; docker exec eco_air_active touch /etc/crontab_fake; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active which mvn'; docker exec eco_air_active which mvn; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active sh -c ''find / -name "*.java" 2>/dev/null'''; docker exec eco_air_active sh -c 'find / -name "*.java" 2>/dev/null'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_active'; docker logs --timestamps eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker inspect --format=''{{.State.Status}} {{.State.ExitCode}} {{.State.OOMKilled}}'' eco_air_active'; docker inspect --format='{{.State.Status}} {{.State.ExitCode}} {{.State.OOMKilled}}' eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 16372
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:47:43.9084671-05:00
+docker history --human --format "table {{.Size}}\t{{.CreatedBy}}" eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:47:44.2769842-05:00
+docker run -d --name eco_air_active -p 8080:8080 eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:47:58.0195000-05:00
+docker top eco_air_active -o pid,user,comm
+
+EXIT CODE: 0
+2026-10-20T20:47:58.1960803-05:00
+docker exec eco_air_active id
+
+EXIT CODE: 0
+2026-10-20T20:47:58.3970159-05:00
+docker exec eco_air_active touch /etc/crontab_fake
+
+EXIT CODE: 1
+2026-10-20T20:47:58.5526451-05:00
+docker exec eco_air_active which mvn
+
+EXIT CODE: 1
+2026-10-20T20:47:58.6969342-05:00
+docker exec eco_air_active sh -c 'find / -name "*.java" 2>/dev/null'
+
+EXIT CODE: 1
+2026-10-20T20:47:59.5337729-05:00
+docker logs --timestamps eco_air_active
+
+EXIT CODE: 0
+2026-10-20T20:47:59.6240716-05:00
+docker inspect --format='{{.State.Status}} {{.State.ExitCode}} {{.State.OOMKilled}}' eco_air_active
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204759
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204815
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 48m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 48m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'''; docker inspect eco_air_crash --format='Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 11836
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:48:15.8734397-05:00
+docker run -d --name eco_air_crash -m 48m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:48:26.4326212-05:00
+docker inspect eco_air_crash --format='Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:48:26.5606276-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:48:26.6629164-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204827
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204836
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'''; docker inspect eco_air_crash --format='Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 33696
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:48:46.2226466-05:00
+docker inspect eco_air_crash --format='Status: {{.State.Status}} | ExitCode: {{.State.ExitCode}} | OOMKilled: {{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:48:46.3233746-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:48:46.4206386-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204846
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204908
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 256m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 256m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 17648
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:49:08.8228786-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:49:08.9930237-05:00
+docker run -d --name eco_air_crash -m 256m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:49:19.6577823-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:49:19.7784888-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:49:19.8832160-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020204921
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020204937
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 192m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 192m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 25; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 5; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 14592
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:49:37.9384733-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:49:38.5821698-05:00
+docker run -d --name eco_air_crash -m 192m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:50:04.2135486-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:50:04.3624186-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:50:04.4789306-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:50:10.6258241-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205011
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205024
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 160m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 160m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 30; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 28184
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:50:24.9653567-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:50:25.8325646-05:00
+docker run -d --name eco_air_crash -m 160m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:50:56.5323625-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:50:56.6433833-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:50:56.7573672-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205057
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205110
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Start-Sleep -Seconds 5; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 144m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 144m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 30; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 36096
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:51:15.6075098-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:51:16.7612570-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:51:17.3915623-05:00
+docker run -d --name eco_air_crash -m 144m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:51:47.9885057-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:51:48.1111965-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:51:48.2101053-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205149
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205201
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Start-Sleep -Seconds 5; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 128m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 128m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 30; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 15540
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:52:06.0901308-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:52:07.2242419-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:52:07.8246251-05:00
+docker run -d --name eco_air_crash -m 128m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:52:38.4690075-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:52:38.6100998-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:52:38.7080658-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205239
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205304
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 112m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 112m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 30; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash'; docker logs --timestamps eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 7456
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:53:14.5708204-05:00
+docker inspect eco_air_crash --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:53:14.8841271-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:53:16.0760807-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:53:16.8245378-05:00
+docker run -d --name eco_air_crash -m 112m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:53:47.6231775-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:53:47.9239763-05:00
+docker logs --timestamps eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:53:48.0592536-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205349
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205422
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 384m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 384m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash | Select-String "Started EcoAirApplication"'; docker logs --timestamps eco_air_crash | Select-String 'Started EcoAirApplication'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 5; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker rm -f eco_air_crash'; docker rm -f eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_crash -m 512m eco-air-backend:1.0.0'; docker run -d --name eco_air_crash -m 512m eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 10; Get-Date -Format o; Write-Output 'docker inspect eco_air_crash --format=''StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'''; docker inspect --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}' eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_crash | Select-String "Started EcoAirApplication"'; docker logs --timestamps eco_air_crash | Select-String 'Started EcoAirApplication'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 5; Get-Date -Format o; Write-Output 'docker stats --no-stream eco_air_crash'; docker stats --no-stream eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 11324
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:54:22.6959097-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:54:23.5212870-05:00
+docker run -d --name eco_air_crash -m 384m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:54:34.3734790-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:54:34.4834033-05:00
+docker logs --timestamps eco_air_crash | Select-String "Started EcoAirApplication"
+
+2026-10-21T01:54:33.357545333Z 2026-10-21T01:54:33.357Z  INFO 1 --- [           main] com.ecoair.EcoAirApplication
+        : Started EcoAirApplication in 7.948 seconds (process running for 8.991)
+EXIT CODE: 0
+2026-10-20T20:54:34.6549735-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:54:40.7579230-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:54:41.8465255-05:00
+docker rm -f eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:54:42.2407492-05:00
+docker run -d --name eco_air_crash -m 512m eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:54:52.7081501-05:00
+docker inspect eco_air_crash --format='StartedAt={{.State.StartedAt}} Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}}'
+
+EXIT CODE: 0
+2026-10-20T20:54:52.7935072-05:00
+docker logs --timestamps eco_air_crash | Select-String "Started EcoAirApplication"
+2026-10-21T01:54:49.226019187Z 2026-10-21T01:54:49.225Z  INFO 1 --- [           main] com.ecoair.EcoAirApplication
+        : Started EcoAirApplication in 5.941 seconds (process running for 6.551)
+EXIT CODE: 0
+2026-10-20T20:54:52.8836187-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:54:58.9871122-05:00
+docker stats --no-stream eco_air_crash
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205500
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205530
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker rm -f eco_air_active eco_air_crash'; docker rm -f eco_air_active eco_air_crash; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0'; docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 12; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_active | Select-String "Started EcoAirApplication"'; docker logs --timestamps eco_air_active | Select-String 'Started EcoAirApplication'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker inspect eco_air_active --format=''Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'''; docker inspect --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}' eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active env | grep OPERATOR_ID'; docker exec eco_air_active sh -c 'env | grep OPERATOR_ID'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker image inspect --format=''{{.Id}}'' eco-air-backend:1.0.0'; docker image inspect --format='{{.Id}}' eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream'; docker stats --no-stream; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'curl.exe --silent --show-error http://localhost:8080/actuator/health'; curl.exe --silent --show-error http://localhost:8080/actuator/health; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 33524
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:55:30.2771617-05:00
+docker rm -f eco_air_active eco_air_crash
+
+EXIT CODE: 0
+2026-10-20T20:55:31.6754836-05:00
+docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:55:44.3777970-05:00
+docker logs --timestamps eco_air_active | Select-String "Started EcoAirApplication"
+
+2026-10-21T01:55:43.739649873Z 2026-10-21T01:55:43.738Z  INFO 1 --- [           main] com.ecoair.EcoAirApplication
+        : Started EcoAirApplication in 10.376 seconds (process running for 11.391)
+EXIT CODE: 0
+2026-10-20T20:55:44.5645809-05:00
+docker inspect eco_air_active --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'
+
+EXIT CODE: 0
+2026-10-20T20:55:44.6515157-05:00
+docker exec eco_air_active env | grep OPERATOR_ID
+
+EXIT CODE: 0
+2026-10-20T20:55:44.8715935-05:00
+docker image inspect --format='{{.Id}}' eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:55:45.0294683-05:00
+docker stats --no-stream
+
+EXIT CODE: 0
+2026-10-20T20:55:46.1579869-05:00
+curl.exe --silent --show-error http://localhost:8080/actuator/health
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205547
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205628
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker inspect --format=''{{.Id}}'' eco-air-backend:1.0.0'; docker inspect --format='{{.Id}}' eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream'; docker stats --no-stream; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker inspect eco_air_active --format=''Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'''; docker inspect --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}' eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null; Write-Output '--- FILES ---'; Get-Item audit_session.log | Select-Object FullName,Length,LastWriteTime; python -c "from pathlib import Path; p=Path('Dockerfile').read_bytes(); d=Path('.dockerignore').read_bytes(); print('Dockerfile BOM:', p.startswith(bytes.fromhex('efbbbf')), 'CRLF:', b'\r\n' in p); print('.dockerignore BOM:', d.startswith(bytes.fromhex('efbbbf')), 'CRLF:', b'\r\n' in d)"; Write-Output '--- GIT STATUS ---'; git status --short
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 11424
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:56:28.9945973-05:00
+docker inspect --format='{{.Id}}' eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:56:29.4001517-05:00
+docker stats --no-stream
+
+EXIT CODE: 0
+2026-10-20T20:56:30.6149480-05:00
+docker inspect eco_air_active --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205630
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205709
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 . (final LF/no-BOM Dockerfile)'; docker build --build-arg 'STUDENT_ID=905523' -t eco-air-backend:1.0.0 .; $buildExit=$LASTEXITCODE; Write-Output "EXIT CODE: $buildExit"; Stop-Transcript | Out-Null; exit $buildExit
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 13204
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:57:09.1752982-05:00
+docker build --build-arg STUDENT_ID="905523" -t eco-air-backend:1.0.0 . (final LF/no-BOM Dockerfile)
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205712
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020205732
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker inspect --format=''{{.Id}}'' eco-air-backend:1.0.0'; docker inspect --format='{{.Id}}' eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker rm -f eco_air_active'; docker rm -f eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0'; docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Start-Sleep -Seconds 12; Get-Date -Format o; Write-Output 'docker logs --timestamps eco_air_active | Select-String "Started EcoAirApplication"'; docker logs --timestamps eco_air_active | Select-String 'Started EcoAirApplication'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker inspect --format=''{{.Id}}'' eco-air-backend:1.0.0'; docker inspect --format='{{.Id}}' eco-air-backend:1.0.0; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker exec eco_air_active sh -c ''env | grep OPERATOR_ID'''; docker exec eco_air_active sh -c 'env | grep OPERATOR_ID'; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream'; docker stats --no-stream; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'curl.exe --silent --show-error http://localhost:8080/actuator/health'; curl.exe --silent --show-error http://localhost:8080/actuator/health; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 34296
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T20:57:32.7669361-05:00
+docker inspect --format='{{.Id}}' eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:57:32.9139354-05:00
+docker rm -f eco_air_active
+
+EXIT CODE: 0
+2026-10-20T20:57:33.5320524-05:00
+docker run -d --name eco_air_active -m 128m -p 8080:8080 eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:57:46.0642673-05:00
+docker logs --timestamps eco_air_active | Select-String "Started EcoAirApplication"
+
+2026-10-21T01:57:44.837540290Z 2026-10-21T01:57:44.836Z  INFO 1 --- [           main] com.ecoair.EcoAirApplication
+        : Started EcoAirApplication in 9.824 seconds (process running for 10.771)
+EXIT CODE: 0
+2026-10-20T20:57:46.2210087-05:00
+docker inspect --format='{{.Id}}' eco-air-backend:1.0.0
+
+EXIT CODE: 0
+2026-10-20T20:57:46.3462844-05:00
+docker exec eco_air_active sh -c 'env | grep OPERATOR_ID'
+
+EXIT CODE: 0
+2026-10-20T20:57:46.5284147-05:00
+docker stats --no-stream
+
+EXIT CODE: 0
+2026-10-20T20:57:47.6844549-05:00
+curl.exe --silent --show-error http://localhost:8080/actuator/health
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020205748
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020210028
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker inspect eco_air_active --format=''Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'''; docker inspect --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}' eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream'; docker stats --no-stream; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'curl.exe --silent --show-error http://localhost:8080/actuator/health'; curl.exe --silent --show-error http://localhost:8080/actuator/health; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 24228
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T21:00:28.9310760-05:00
+docker inspect eco_air_active --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'
+
+EXIT CODE: 0
+2026-10-20T21:00:29.1884577-05:00
+docker stats --no-stream
+
+EXIT CODE: 0
+2026-10-20T21:00:30.4509745-05:00
+curl.exe --silent --show-error http://localhost:8080/actuator/health
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020210030
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020210239
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker inspect eco_air_active --format=''Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'''; docker inspect --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}' eco_air_active; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker stats --no-stream'; docker stats --no-stream; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'curl.exe --silent --show-error http://localhost:8080/actuator/health'; curl.exe --silent --show-error http://localhost:8080/actuator/health; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 19228
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T21:02:39.8708520-05:00
+docker inspect eco_air_active --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Memory={{.HostConfig.Memory}}'
+
+EXIT CODE: 0
+2026-10-20T21:02:40.0434000-05:00
+docker stats --no-stream
+
+EXIT CODE: 0
+2026-10-20T21:02:41.2389605-05:00
+curl.exe --silent --show-error http://localhost:8080/actuator/health
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020210241
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261020210409
+Nombre de usuario: DESKTOP-EJ637KI\Admin
+Usuario RunAs: DESKTOP-EJ637KI\Admin
+Nombre de la configuración: 
+Máquina: DESKTOP-EJ637KI (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -NoLogo -NonInteractive -Command try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}; try { if (Get-Variable -Name PSStyle -ErrorAction Ignore) { $PSStyle.OutputRendering = 'PlainText' } } catch {}; $global:LASTEXITCODE = 0; $__copilotCommandFinished = $false; $__copilotSuccess = $false; try { $global:LASTEXITCODE = 0
+Start-Transcript -Path 'audit_session.log' -Append | Out-Null; Get-Date -Format o; Write-Output 'docker version'; docker version; Write-Output "EXIT CODE: $LASTEXITCODE"; Get-Date -Format o; Write-Output 'docker info'; docker info; Write-Output "EXIT CODE: $LASTEXITCODE"; Stop-Transcript | Out-Null
+$__copilotSuccess = $?
+$__copilotCommandFinished = $true
+ } finally { if ($__copilotCommandFinished) { if (-not $__copilotSuccess -and $LASTEXITCODE -is [int] -and $LASTEXITCODE -ne 0) { $host.SetShouldExit($LASTEXITCODE) } elseif (-not $__copilotSuccess) { $host.SetShouldExit(1) } else { $host.SetShouldExit(0) } } }
+Id. de proceso: 19172
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+2026-10-20T21:04:09.1328469-05:00
+docker version
+
+EXIT CODE: 0
+2026-10-20T21:04:09.5875707-05:00
+docker info
+
+EXIT CODE: 0
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261020210410
+**********************

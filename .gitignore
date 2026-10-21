@@ -1,5 +1,13 @@
 # Maven
 target/
+build/
+.gradle/
+
+# Java
+*.class
+*.log
+!audit_session.log
+hs_err_pid*.log
 
 # IDE
 .idea/

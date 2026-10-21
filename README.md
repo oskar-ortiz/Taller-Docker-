@@ -42,7 +42,7 @@ La aplicación queda disponible en `http://localhost:8080`.
 El argumento `STUDENT_ID` identifica al estudiante y se inyecta como `OPERATOR_ID` dentro del contenedor.
 
 ```bash
-docker build --build-arg STUDENT_ID=TU_ID -t eco-air-backend:1.0.0 .
+docker build --build-arg STUDENT_ID=905523 -t eco-air-backend:1.0.0 .
 ```
 
 ## Ejecutar el contenedor
@@ -50,6 +50,7 @@ docker build --build-arg STUDENT_ID=TU_ID -t eco-air-backend:1.0.0 .
 ```bash
 docker run --rm \
   --name eco-air-backend \
+  -m 128m \
   -p 8080:8080 \
   eco-air-backend:1.0.0
 ```
@@ -60,7 +61,7 @@ También puede inyectarse el identificador durante la ejecución:
 docker run --rm \
   --name eco-air-backend \
   -p 8080:8080 \
-  -e OPERATOR_ID=TU_ID \
+  -e OPERATOR_ID=905523 \
   eco-air-backend:1.0.0
 ```
 
@@ -80,6 +81,11 @@ La respuesta esperada indica que el servicio está disponible.
 - Soporte para límites de memoria del contenedor mediante `JAVA_TOOL_OPTIONS`.
 - Puerto `8080` expuesto.
 - Configuración del identificador del operador mediante `STUDENT_ID` y `OPERATOR_ID`.
+- Usuario runtime no root con UID `10001`.
+
+## Auditoría y calibración
+
+La imagen fue probada con límites cgroup de 48, 112, 128, 144, 160, 192, 256, 384 y 512 MiB. En esta máquina, `128m` fue el límite mínimo probado que inició en menos de 15 segundos y permaneció saludable; con `48m` el contenedor terminó por OOM (código 137), y con `112m` el inicio tomó más de 15 segundos. Los resultados exactos, timestamps e ID de imagen están en `FORENSIC_REPORT.md` y `audit_session.log`.
 
 ## Entregables
 

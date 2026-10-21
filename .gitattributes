@@ -1,0 +1,9 @@
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+audit_session.log text eol=crlf
+taller-docker-semana13/audit_session.log text eol=crlf
+/.gitattributes text eol=lf
+*.pdf binary
+*.zip binary
