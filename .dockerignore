@@ -1,0 +1,12 @@
+target/
+.git/
+.idea/
+*.log
+*.md
+!pom.xml
+audit_session.log
+FORENSIC_REPORT.md
+taller-docker-semana13/
+*.zip
+node_modules/
+.next/
