@@ -1,70 +1,74 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/Contents 8 0 R /MediaBox [ 0 0 792 612 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Length 993 >>
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (905523) /CreationDate (D:20261020210324-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261020210324-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Taller Docker - EcoAir Backend) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2494
+>>
 stream
-BT
-/F1 10 Tf
-50 750 Td
-(JUSTIFICACION DEL TALLER DOCKER) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Proyecto: eco-air-backend) Tj
-0 -14 Td
-(STUDENT_ID configurado: 905523) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Se preparo una aplicacion Spring Boot 3 con Java 17, H2, JPA,) Tj
-0 -14 Td
-(REST y Actuator. El Dockerfile usa construccion multietapa para) Tj
-0 -14 Td
-(separar Maven/codigo fuente del runtime JRE, ejecuta como sensor_user) Tj
-0 -14 Td
-(UID 10001 y limita la JVM con MaxRAMPercentage.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Estado de evidencia:) Tj
-0 -14 Td
-(Docker no esta instalado en el entorno de ejecucion actual.) Tj
-0 -14 Td
-(Por integridad, no se inventaron hash de imagen, resultado OOM ni) Tj
-0 -14 Td
-(estadisticas docker. La auditoria registra el bloqueo real y el) Tj
-0 -14 Td
-(reporte indica exactamente que debe completarse en Docker Desktop/WSL2.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Archivos: Dockerfile, .dockerignore, audit_session.log,) Tj
-0 -14 Td
-(FORENSIC_REPORT.md y taller_docker_semana13.zip.) Tj
-ET
-endstream
+Gau0EDf=C='7QQLE@<L`*Fb=aouFmTUkq%?X-:bIhA$<,M+P+tOt4X[L])\ZI7MDBmF7"-!fIXpe</&tT0)U='Ea47<df`RJG0FrpF??c@IXUs&daJW0Njon4^m*:OqPp%X$A+p8C-<U%`Pdfk>*I]^fjPS^-Y'pbVOd>)`Z+\nV&>e^51]h&L<4Yi@55Mi6MZU@<N7Gn34X2)SLjDT<S).7YdbcUd+?ibUgEl1Q0jsiB1g3ccW?<8PsB"3(Q\*#+mBa"oPPYlUht#b%qMY('Y*%jqK!K=]fR-\MfeEEi628"lf_\_NVhRGI3"pr3jMpB1=u&lIsgHd`V8qJoEd*,\=(#?lb?OOPTh0@2=7>.1"oH#N!9`Y;UZr!cuc[+q4%?!&)pE[SF_".)9duQs#-r3Y$0Yndtd)]ikYJ2lHb!!Zs&W"==H9S$\,U)E("a+6F5hH',2g<9&LD1_a)Um>YdM3aLoOW/D(2jgidGb+R*qOl[+C!ZD#[H9]*[#uJc.]fh!)K07=L!]RTPq8M?*rd`E`6_+.X_p[1ETY5Q-ql@j3!bDN&$[nG>AUq5MGFS7db=f3V(4;`]b\hPEC6UmG?X-$5CJtcJlS;"j\Y"#K#5!$NYMp2^Hci\>Re43oHBJQ2\im,uq(i73q6GXN/$q6ha#FNknII8'@5\JPI'g!,c'T*mLs)dm*,t"uI@jA,LrV2QqHCs:4jlmZh_JB@7hma2fjc.i=A$W@-0(Td+5KJ@S-OV2#K6X?09;EY;cNaHarc5>N5')RKaAA#0^cb.IX_RfNR#]U4R1=8_e`5"7ZVuPkQH84o*2gnS)V]fc2I%!rt"'jHGkrgm3\7g3ZM^VKKYSUgWAHY(F[&/R:4<U6XUY,nLFEUEF#6`br!J6^LP%B$mtarR:/35iLU(%r#Xl>(I=I-1r9/"2<"TEhDgJ#MCF</l9R]ScJW];9c1$TRcTM4\7CmkA<opCN321B0\+N>c'1s2ZXAnsltq3;M*<k;gJLrZ<@WCUEJ\uHONoiU>t7(+*=X>(2^e%]jBk[gofXdP+O#&.lN%S3YF+"#e&i%42a^#=Ui(i<_&_J(B7r+6V@-l4fS0+U7n\C-b$<l.bE__S5q)$7otAtpHEn(34Z8oR<-<#/#H74GCjJqRZ2#CqHYbV;RIYW<4=gL%VI)Eq76Oma:""4pJlh'bO&Z1(#+6ipE%*C>$g>,R0_8_GGG90@'.F'j6(c^9k0n&7l#!="_-OpRn(9%u_nE7hUms"kl[9.;=k^P)0tu12Kaf9,.;^&GfdNgYVucPF_7)M]H*mgED/Xq\luZNGgJ)L72_<'kM9jNn2/273iuZ<kHH@V#g$%+$JH9)^_agT@c"`eW)H'B?E/<U4WmioA)j^!CWJ]7j[Np+#'g<_L2XK?T9LY2:Di9C"-eN/'$"ee\D-F,@HG;[\l/K]#]NH22#k:iqp]]9Z_Fg/Z_d$[V?b<2m-$JK);9JA%JgE2m(WFICqo0R<4CPhqm8c+c`kNPl;#]k/>sb(_X2'l9M,PLaDe8_4iCW#rT9U1A@"PV8+3M>=\jMkCrVTkTK2:mO0]0d0"C[R;n;2E-o60UjRC>P-LaNDf@lnYlHGj?E5),jn$*q>_hS;;3%XohtG3E$fas!%3?0698Zf`S50(Ro?'1T]q&iI$CrD,5PS`r[/)\D^dgt*pOh=Q*1s$';8A,]^U/or%IIN?bn0$Jf,+[X"PmFfO[I0)@0"R[b]rr'aHFKaT)a)Mf7E3^k-<\$K-pE\C+,eg`8^d`AeUMP,r)pNeT?b*etXnGbqSS#F9=RPhPID($+QcXm%D==59lKC%XgW".!S>eQ"N4a#ojFW:N#`QE52"ElB:;46u&j]gSH/-IUD`dTG(-_]KU#f@L("FrSMWu$d1eP)O;<BoAeM[#&ojV@Jk_R[kB4K*)7]R5d;ECOe9PJ.\A#W5!_J&##m[;[J1+,%0Hig1:j1pI2Y<<m=k1.O'O$G=9Xqqo'lcC-D=.Q[;"[S>+'OHiMI5.45Z_T"3'IRX(p[(+cT*m@1,KcoB^pD,kmdDcWS)BV(EB9RA]!jPE3j)_'Vki'nTd5aI/1g"V/7A>BVE6XA7]:S9np9No+)`c]Ih>p?LJX?6(>u[NX1N755['^)a[ep.\6SlJG;7m-[Zu`fG;&o7DP`"!7goZG.r="=bR9Ks<8j\-UQ'CH/bM\(J%T!:F5m((W[SM2rUN9TeqCaX;,Y[h-([3af$UW#.imVO$2'287T>5Y8K`U,ei(eOkJ^0MDm.3$)!:/m=ArY<FM!4+b+NIUitr9)K&;C=`_MK/;8mH"DAoWZ:f.I(<Al[nSQN-XF=M:ZBZ6-][EjiBD<tlY7.%-l`_BqnmOh(u`"e-^];m2c^>F)N&-E.`a^qmfdO6WkTEp]?$4?BJI\#[X0Q.]Nl[Gp9<pO3'_'Y&_LI)eGS>@LQSd8$(YELrIhIAg(6]r^NJhd1L1S7q09eRUNPM;T&Juk^0Y8lN^?fStjHN~>endstream
 endobj
 xref
-0 6
+0 9
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000241 00000 n 
-0000000311 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000000872 00000 n 
+0000000931 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<<
+/ID 
+[<deb568e3287cd5ef4f55e76db1f0c528><deb568e3287cd5ef4f55e76db1f0c528>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
 startxref
-1355
+3516
 %%EOF
