@@ -90,3 +90,7 @@ La imagen fue probada con límites cgroup de 48, 112, 128, 144, 160, 192, 256, 3
 ## Entregables
 
 El repositorio incluye el código fuente, la configuración Maven, los archivos Docker, el informe forense, el registro de auditoría y los archivos de entrega del taller.
+
+### Informe completo
+
+[Abrir o descargar el informe del Taller Docker EcoAir (PDF)](./taller_docker_semana13.pdf)
