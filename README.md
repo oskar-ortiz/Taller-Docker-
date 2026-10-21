@@ -93,4 +93,4 @@ El repositorio incluye el código fuente, la configuración Maven, los archivos 
 
 ### Informe completo
 
-[Abrir o descargar el informe completo del Taller Docker EcoAir (PDF)](https://raw.githubusercontent.com/oskar-ortiz/Taller-Docker-/main/taller_docker_semana13.pdf)
+[Abrir o descargar el informe completo del Taller Docker EcoAir (PDF, 16 páginas)](https://raw.githubusercontent.com/oskar-ortiz/Taller-Docker-/main/taller_docker_semana13.pdf)
