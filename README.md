@@ -1,35 +1,89 @@
 # Taller Docker — EcoAir Backend
 
-Proyecto del taller de Docker para empaquetar y ejecutar un backend Spring Boot de EcoAir.
+Backend Spring Boot de EcoAir, empaquetado en Docker y ejecutado con Docker Compose detrás de Nginx, con PostgreSQL persistente.
 
 ## Tecnologías
 
-- Java 17
-- Spring Boot 3.3.5
-- Maven
-- Docker
-- H2 Database
-- Spring Data JPA
-- Spring Boot Actuator
+- Java 17, Spring Boot 3.3.5 y Maven
+- Docker Compose
+- Nginx como reverse proxy
+- PostgreSQL 16
+- H2 para ejecución local con Maven
+- Spring Data JPA y Spring Boot Actuator
 
-## Estructura
+## Arquitectura
 
 ```text
-.
-├── Dockerfile
-├── .dockerignore
-├── pom.xml
-├── src/
-├── taller-docker-semana13/
-├── FORENSIC_REPORT.md
-├── audit_session.log
-├── taller_docker_semana13.pdf
-└── taller_docker_semana13.zip
+Cliente --HTTP:80--> Nginx --red edge--> Backend Spring Boot
+                                      Backend --red interna data--> PostgreSQL
 ```
 
-## Ejecutar localmente con Maven
+Solo Nginx publica un puerto al host. El backend no publica `8080` y PostgreSQL no publica `5432`. Nginx y backend comparten la red Bridge `edge`; backend y PostgreSQL comparten la red Bridge interna `data`. El volumen nombrado `postgres_data` conserva los datos de PostgreSQL al recrear los contenedores.
 
-Requiere Java 17 y Maven.
+## Iniciar con Docker Compose
+
+Requiere Docker Desktop o Docker Engine con Docker Compose v2.
+
+En PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+En macOS/Linux:
+
+```bash
+cp .env.example .env
+```
+
+Edita `.env` y cambia `POSTGRES_PASSWORD` antes de iniciar. La contraseña del ejemplo es solo para desarrollo local.
+
+Construye y levanta los servicios:
+
+```bash
+docker compose up --build -d
+docker compose ps
+docker compose logs --tail=100
+```
+
+Compose espera a que PostgreSQL y el backend pasen sus healthchecks antes de arrancar el servicio dependiente.
+
+## Verificar
+
+Nginx es la entrada pública en el puerto 80:
+
+```bash
+curl http://localhost/actuator/health
+curl http://localhost/api/alertas
+```
+
+La respuesta del health endpoint debe contener `"status":"UP"`. Para crear una alerta de prueba:
+
+```bash
+curl -X POST http://localhost/api/alertas \
+  -H "Content-Type: application/json" \
+  -d "{\"estacion\":\"Centro\",\"tipo\":\"PM2.5\",\"valor\":18.4,\"severidad\":\"MODERADA\",\"fecha\":\"2026-10-22T12:00:00Z\"}"
+```
+
+Consultar nuevamente `http://localhost/api/alertas` debe mostrar la alerta creada.
+
+## Operación y persistencia
+
+```bash
+docker compose ps
+docker compose logs -f backend
+docker compose logs -f nginx
+docker compose restart
+docker compose down
+```
+
+`docker compose down` elimina los contenedores y redes del proyecto, pero conserva `postgres_data`. No uses `docker compose down -v` salvo que quieras borrar permanentemente la base de datos. Después de `down` y `up -d`, vuelve a consultar `/api/alertas` para confirmar la persistencia.
+
+Los límites de memoria se pueden ajustar en `.env` (`BACKEND_MEMORY_LIMIT`, `POSTGRES_MEMORY_LIMIT`, `NGINX_MEMORY_LIMIT`). La auditoría local observó mayor margen con `384M` para el backend que con `256M`; son valores de partida y deben contrastarse con el equipo donde se ejecuta.
+
+## Ejecución local sin Docker
+
+Requiere Java 17 y Maven. Esta ejecución utiliza H2 en memoria:
 
 ```bash
 mvn spring-boot:run
@@ -37,60 +91,14 @@ mvn spring-boot:run
 
 La aplicación queda disponible en `http://localhost:8080`.
 
-## Construir la imagen Docker
+## Diferencias frente al flujo anterior
 
-El argumento `STUDENT_ID` identifica al estudiante y se inyecta como `OPERATOR_ID` dentro del contenedor.
+| Antes | Con Docker Compose |
+|---|---|
+| `docker build` y `docker run` manuales para un único backend | Compose construye y coordina Nginx, backend y PostgreSQL |
+| El backend publica `8080` al host | Solo Nginx publica `80`; backend y PostgreSQL no tienen puertos publicados |
+| H2 en memoria pierde datos al reiniciar | PostgreSQL usa el volumen `postgres_data` |
+| Sin proxy ni redes separadas | Nginx reenvía solicitudes y la base de datos queda en una red interna |
+| Verificación manual del contenedor | Healthchecks y dependencias de arranque declaradas en Compose |
 
-```bash
-docker build --build-arg STUDENT_ID=905523 -t eco-air-backend:1.0.0 .
-```
-
-## Ejecutar el contenedor
-
-```bash
-docker run --rm \
-  --name eco-air-backend \
-  -m 128m \
-  -p 8080:8080 \
-  eco-air-backend:1.0.0
-```
-
-También puede inyectarse el identificador durante la ejecución:
-
-```bash
-docker run --rm \
-  --name eco-air-backend \
-  -p 8080:8080 \
-  -e OPERATOR_ID=905523 \
-  eco-air-backend:1.0.0
-```
-
-## Verificar el servicio
-
-```bash
-curl http://localhost:8080/actuator/health
-```
-
-La respuesta esperada indica que el servicio está disponible.
-
-## Características del Dockerfile
-
-- Construcción multi-stage para separar compilación y ejecución.
-- Imagen final basada en un JRE liviano.
-- Usuario no root (`sensor_user`) para ejecutar la aplicación.
-- Soporte para límites de memoria del contenedor mediante `JAVA_TOOL_OPTIONS`.
-- Puerto `8080` expuesto.
-- Configuración del identificador del operador mediante `STUDENT_ID` y `OPERATOR_ID`.
-- Usuario runtime no root con UID `10001`.
-
-## Auditoría y calibración
-
-La imagen fue probada con límites cgroup de 48, 112, 128, 144, 160, 192, 256, 384 y 512 MiB. En esta máquina, `128m` fue el límite mínimo probado que inició en menos de 15 segundos y permaneció saludable; con `48m` el contenedor terminó por OOM (código 137), y con `112m` el inicio tomó más de 15 segundos. Los resultados exactos, timestamps e ID de imagen están en `FORENSIC_REPORT.md` y `audit_session.log`.
-
-## Entregables
-
-El repositorio incluye el código fuente, la configuración Maven, los archivos Docker, el informe forense, el registro de auditoría y los archivos de entrega del taller.
-
-### Informe completo
-
-[Abrir o descargar el informe completo del Taller Docker EcoAir (PDF, 16 páginas)](https://raw.githubusercontent.com/oskar-ortiz/Taller-Docker-/main/taller_docker_semana13.pdf)
+La ejecución anterior se conserva en el informe como baseline. Los nuevos resultados de arranque, memoria y salud deben interpretarse para esta topología con PostgreSQL y Nginx.

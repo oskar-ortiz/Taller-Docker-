@@ -116,3 +116,54 @@ Cada intento se recreó bajo el nombre `eco_air_crash`; se esperó al menos 30 s
 ## Entorno y preservación de otros contenedores
 
 Al inicio `docker version` y `docker info` confirmaron Docker Desktop y el daemon Linux. El primer build falló mientras Docker Desktop se detenía, con HTTP 500 al obtener BuildKit. Se registraron el error y la recuperación del Desktop en el log; el build posterior completó correctamente. Los contenedores existentes `acme-mq-prod-01` y `kernel-demo` no se eliminaron ni modificaron. La limpieza y recreación se limitaron a `eco_air_active` y `eco_air_crash`.
+
+## Reto 4 — Docker Compose, reverse proxy y persistencia PostgreSQL
+
+**Fecha de ejecución:** 2026-10-22 (hora local, UTC-05:00). Evidencia de comandos y resultados de esta ejecución: [`audit_session.log`](./audit_session.log).
+
+La auditoría de esta sección corresponde a la nueva topología Compose y no sustituye el baseline previo de H2.
+
+### Topología verificada
+
+| Servicio | Imagen / configuración | Resultado observado |
+|---|---|---|
+| `nginx` | `nginx:stable`, publicado `80:80`, conectado solo a `edge` | `healthy`; healthcheck Nginx correcto; único puerto de servicio publicado al host. |
+| `backend` | Imagen construida localmente, usuario `sensor_user` (UID 10001), límite `384 MiB`, puerto interno `8080` | `healthy`; `8080/tcp` sin publicación al host; conectado a `edge` y `data`. |
+| `postgres` | `postgres:16-bookworm`, límite `512 MiB`, volumen `taller-docker-_postgres_data` | `healthy`; `5432/tcp` sin publicación al host; conectado solo a `data`. |
+| Red `edge` | Bridge no interna | Contiene Nginx y backend. |
+| Red `data` | Bridge con `internal=true` | Contiene backend y PostgreSQL; no contiene Nginx. |
+
+Se usó PostgreSQL Bookworm porque la imagen Alpine obtenida durante esta auditoría no contenía el usuario de sistema `postgres` que requiere su entrypoint, por lo que no completaba el inicio. La imagen `nginx:alpine` del daemon falló al ejecutar su entrypoint (`exec format error`); la sustitución por `nginx:stable` inició correctamente y pasó el healthcheck.
+
+### Verificaciones funcionales y de persistencia
+
+| Prueba | Resultado |
+|---|---|
+| `docker compose config --quiet` | Correcto. |
+| `mvn test` | `BUILD SUCCESS`; el proyecto no contiene fuentes de prueba. |
+| `docker compose up -d --wait --wait-timeout 180` | Los tres servicios pasaron a `healthy`. |
+| `GET http://localhost/actuator/health` a través de Nginx | HTTP 200; `{"status":"UP"}`. |
+| `GET http://localhost/api/alertas` a través de Nginx | HTTP 200; devolvió las alertas persistidas. |
+| `POST /api/alertas` de prueba | HTTP correcto; creó la alerta de auditoría con ID `3`. |
+| `docker compose down` seguido de `docker compose up -d --wait --wait-timeout 180` | Los servicios volvieron a `healthy`; el volumen nombrado siguió presente. |
+| Consulta de la alerta después de recrear los servicios | La alerta `AuditoriaPersistencia`, ID `3`, siguió disponible. |
+| Identidad/permisos del backend | `sensor_user`; el proceso no se ejecuta como root. |
+| Publicación de puertos | Solo Nginx publica `80`; backend `8080` y PostgreSQL `5432` no tienen puertos de host asignados. |
+
+### Memoria y arranque de la topología Compose
+
+La primera ejecución del backend con PostgreSQL usó el límite de `256 MiB`: Spring Boot inició en `36.092` segundos y se observó una lectura de `229.3 MiB / 256 MiB` durante las comprobaciones iniciales. El backend permaneció healthy, pero el margen era reducido. Se fijó `384 MiB` como límite local de Compose para evitar operar tan cerca del techo; en la recreación final el arranque de Spring Boot tomó `12.256` segundos.
+
+En la lectura final de `docker stats --no-stream`, tomada después de recrear los servicios y confirmar la persistencia, se observó:
+
+| Servicio | Uso observado / límite | Estado |
+|---|---:|---|
+| Backend | `188.7 MiB / 384 MiB` | `healthy` |
+| PostgreSQL | `37.91 MiB / 512 MiB` | `healthy` |
+| Nginx | `4.816 MiB / 64 MiB` | `healthy` |
+
+El límite recomendado en `.env` para el backend queda en `384M`; es una configuración conservadora observada en esta máquina, no una garantía para otros hosts. El límite anterior de `128 MiB` se midió con H2 y no debe trasladarse a la topología PostgreSQL sin repetir la calibración en el entorno de entrega.
+
+### Configuración local
+
+Se generó un `.env` local ignorado por Git con una contraseña aleatoria y se actualizó la contraseña del rol PostgreSQL existente antes de recrear el stack. El secreto no se incluye en este informe ni en el registro de auditoría. La plantilla `.env.example` conserva únicamente un valor de demostración que debe cambiarse antes de usarla en otra instalación.
